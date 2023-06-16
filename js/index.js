@@ -84,7 +84,6 @@ function fetchBeverages() {
             let rows = beverages.map(element => createBeverageTemplate(element));
             let table = $("#beverages tbody");
             table.append(rows);
-            console.log(beverages);
         });
 }
 
@@ -94,7 +93,6 @@ function fetchOrderSizes() {
         .then(sizes => {
             let rows = sizes.map(element => createSizeTemplate(element));
             let table = $("#sizes tbody");
-            console.log(sizes);
             table.append(rows);
         });
 }
